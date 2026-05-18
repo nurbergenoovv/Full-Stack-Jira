@@ -61,7 +61,7 @@ npm run install:all
 ```bash
 # Copy the example files and fill in your values
 cp backend/.env.example backend/.env
-cp frontend/.env.local.example frontend/.env.local
+cp frontend/.env.local.example frontend/.env
 ```
 
 **`backend/.env`:**
@@ -76,7 +76,7 @@ UPLOADTHING_TOKEN=                     # from uploadthing.com/dashboard
 UPLOADTHING_SECRET=
 ```
 
-**`frontend/.env.local`:**
+**`frontend/.env`:**
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
