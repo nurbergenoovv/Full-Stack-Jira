@@ -1,0 +1,140 @@
+.layout {
+  display: flex;
+  min-height: calc(100vh - 56px);
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+  min-width: 0;
+}
+
+.profileContainer {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Avatar */
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.avatarUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatarHint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.errorMsg {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid var(--error);
+  color: var(--error);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+}
+
+.successMsg {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid var(--success);
+  color: var(--success);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+}
+
+.readonlyField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.readonlyLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.readonlyValue {
+  font-size: 14px;
+  color: var(--text);
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  opacity: 0.7;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .avatarSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}

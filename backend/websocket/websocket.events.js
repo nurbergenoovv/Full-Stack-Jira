@@ -1,0 +1,15 @@
+module.exports = {
+  JOIN_PROJECT: 'join:project',
+  LEAVE_PROJECT: 'leave:project',
+  TASK_CREATED: 'task:created',
+  TASK_UPDATED: 'task:updated',
+  TASK_DELETED: 'task:deleted',
+  TASK_MOVED: 'task:moved',
+  COMMENT_ADDED: 'comment:added',
+  COMMENT_UPDATED: 'comment:updated',
+  COMMENT_DELETED: 'comment:deleted',
+  NOTIFICATION_NEW: 'notification:new',
+  USER_ONLINE: 'user:online',
+  USER_OFFLINE: 'user:offline',
+  ONLINE_USERS: 'online:users',
+};

@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatarWrap {
+  position: relative;
+  margin-left: -4px;
+}
+.avatarWrap:first-child {
+  margin-left: 0;
+}
+
+.onlineDot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+  border: 1.5px solid var(--bg);
+}
+
+.count {
+  font-size: 12px;
+  color: var(--success);
+  font-weight: 500;
+  white-space: nowrap;
+}
